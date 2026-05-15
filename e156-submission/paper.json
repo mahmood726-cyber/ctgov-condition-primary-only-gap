@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Condition Primary-Only Gap",
+  "slug": "ctgov-condition-primary-only-gap",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Which condition families most often leave older CT.gov study pages without the primary outcome description while keeping the broader detailed-description field? We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot using one condition-family label per study. We defined a primary-only gap as missing primary outcome description with detailed description still present, then ranked large condition families by stock and rate. Oncology led the condition-family primary-only-gap stock table at 7,102 studies, followed by Other at 5,818, Cardiovascular at 3,766, and Infectious disease at 2,584. Oncology also had the highest large-family primary-only-gap rate at 16.8 percent, ahead of Cardiovascular at 14.5 percent and Infectious disease at 14.3 percent. Condition-family primary-only gaps show where the endpoint sentence disappears most often even though the broader study narrative remains on the page. Condition families are keyword-derived registry groupings rather than formal disease ontologies or mutually exclusive diagnoses across all studies. They simplify diagnoses for readers.",
+  "word_count": 156,
+  "sentence_count": 8,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Which condition families most often leave older CT.gov study pages without the primary outcome description while keeping the broader detailed-description field?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 249,507 eligible older closed interventional studies from the March 29, 2026 full-registry snapshot using one condition-family label per study."
+    },
+    {
+      "role": "Method",
+      "text": "We defined a primary-only gap as missing primary outcome description with detailed description still present, then ranked large condition families by stock and rate."
+    },
+    {
+      "role": "Primary result",
+      "text": "Oncology led the condition-family primary-only-gap stock table at 7,102 studies, followed by Other at 5,818, Cardiovascular at 3,766, and Infectious disease at 2,584."
+    },
+    {
+      "role": "Secondary result",
+      "text": "Oncology also had the highest large-family primary-only-gap rate at 16.8 percent, ahead of Cardiovascular at 14.5 percent and Infectious disease at 14.3 percent."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Condition-family primary-only gaps show where the endpoint sentence disappears most often even though the broader study narrative remains on the page."
+    },
+    {
+      "role": "Boundary",
+      "text": "Condition families are keyword-derived registry groupings rather than formal disease ontologies or mutually exclusive diagnoses across all studies. They simplify diagnoses for readers."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Condition Primary-Only Gap dashboard",
+    "data": "249,507 eligible older closed interventional studies with primary-only-gap stock and rate summaries",
+    "code": "https://github.com/mahmood726-cyber/ctgov-condition-primary-only-gap",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Primary-only-gap stock among older studies missing the primary outcome description field while retaining the detailed description field",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": false,
+        "detail": "Found 8 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
